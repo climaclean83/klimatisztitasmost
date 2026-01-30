@@ -1,52 +1,167 @@
-<!DOCTYPE html><html lang="hu">
+<!DOCTYPE html>
+<html lang="hu">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saját Weboldal</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; }
-    header { background: #222; color: white; padding: 20px; text-align: center; }
-    nav { background: #444; padding: 10px; text-align: center; }
-    nav a { color: white; margin: 0 10px; text-decoration: none; }
-    main { max-width: 900px; margin: 20px auto; background: white; padding: 20px; border-radius: 8px; }
-    footer { text-align: center; padding: 15px; color: #777; }
-    .btn { display: inline-block; padding: 10px 16px; background: #007bff; color: white; border-radius: 6px; text-decoration: none; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Klímatisztítás Most – Budapest & Gödöllő</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #eef7ff, #ffffff);
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+nav {
+  background: white;
+  text-align: center;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+main {
+  max-width: 1000px;
+  margin: 25px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 22px;
+  background: linear-gradient(135deg, #ff7a18, #ffb347);
+  color: white;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 12px;
+  transition: 0.15s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.badge {
+  display: inline-block;
+  background: #28a745;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.call-float {
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  background: #28a745;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 999px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+  z-index: 50;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+  margin-top: 40px;
+}
+</style>
 </head>
-<body><header>
-  <h1>Klímatisztítás Most – Budapest & Gödöllő környéke</h1>
-  <p>Gyors, szakszerű klímatisztítás 15 000 Ft-tól – hívj most!</p>
-  <a class="btn" href="tel:+36209852797">📞 Azonnali hívás</a>
-</header><nav>
+
+<body>
+
+<header>
+  <h1>Klímatisztítás Most</h1>
+  <p>Gyors, szakszerű klímatisztítás Budapest & Gödöllő környékén</p>
+  <div class="badge">Szezon előtti ár: 15 000 Ft</div><br>
+  <a class="btn" href="tel:+36209852797">📞 Hívás most</a>
+</header>
+
+<nav>
   <a href="#home">Főoldal</a>
-  <a href="#about">Rólam</a>
+  <a href="#services">Szolgáltatások</a>
+  <a href="#pricing">Árlista</a>
   <a href="#contact">Kapcsolat</a>
-</nav><main id="home">
+</nav>
+
+<main id="home">
   <h2>Professzionális klímatisztítás gyors kiszállással</h2>
-  <p>Budapest és Gödöllő irányába vállalok klímatisztítást, fertőtlenítést és karbantartást. Egyedül dolgozom, így minden munkát személyesen, lelkiismeretesen végzek el.</p>
+  <p>Egyedül dolgozom, minden munkát személyesen és alaposan végzek. Klímatisztítást, fertőtlenítést és karbantartást vállalok Budapest és Gödöllő irányába.</p>
+
   <ul>
-    <li>✔ Szakszerű tisztítás</li>
     <li>✔ Baktérium- és gombamentesítés</li>
     <li>✔ Szageltávolítás</li>
+    <li>✔ Hatékonyabb működés</li>
     <li>✔ Gyors időpont</li>
   </ul>
+
   <a class="btn" href="#contact">Időpont foglalás</a>
-</main><main id="about">
+</main>
+
+<main id="services">
   <h2>Szolgáltatások</h2>
   <ul>
     <li><strong>Lakossági klímatisztítás</strong> – teljes beltéri egység tisztítás</li>
     <li><strong>Fertőtlenítés</strong> – baktériumok, gombák eltávolítása</li>
-    <li><strong>Karbantartás</strong> – hatékonyabb működés, hosszabb élettartam</li>
+    <li><strong>Karbantartás</strong> – hosszabb élettartam, kevesebb hiba</li>
     <li><strong>Szageltávolítás</strong> – kellemetlen szagok megszüntetése</li>
   </ul>
-</main><main id="contact">
+</main>
+
+<main id="pricing">
   <h2>Árlista</h2>
   <p><strong>Szezon előtt:</strong> 15 000 Ft / klíma</p>
-  <p>Több klíma esetén egyedi kedvezmény!</p>  <h2>Kapcsolat</h2>
+  <p>Több klíma esetén kedvezmény!</p>
+</main>
+
+<main id="contact">
+  <h2>Kapcsolat</h2>
   <p><strong>Telefonszám:</strong> <a href="tel:+36209852797">06 20 985 2797</a></p>
   <p><strong>Működési terület:</strong> Budapest és Gödöllő környéke</p>
-  <p><strong>Gyors időpontfoglalás telefonon!</strong></p>
-</main><footer>
-  © 2026 Saját Weboldal
-</footer></body>
+  <p><strong>Gyors időpont telefonon!</strong></p>
+</main>
+
+<a class="call-float" href="tel:+36209852797">📞 Hívj most</a>
+
+<footer>
+© 2026 klimatisztitasmost.hu – Minden jog fenntartva
+</footer>
+
+</body>
 </html>
