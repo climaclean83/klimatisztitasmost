@@ -139,7 +139,30 @@ footer {
   text-decoration: none;
   box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
-</style>
+.season-deal {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: white;
+  padding: 16px 20px;
+  border-radius: 16px;
+  text-align: center;
+  margin: 20px 0;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.season-label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+.season-price {
+  display: block;
+  font-size: 26px;
+  font-weight: 800;
+  margin-top: 6px;
+}
+  </style>
 </head>
 
 <body>
@@ -184,8 +207,10 @@ footer {
 <main id="pricing">
   <h2>Árlista</h2>
   <p>
-<strong>Szezon előtti akció:</strong><br>
-<strong>15 000 Ft / klíma</strong>
+<div class="season-deal">
+  <span class="season-label">Szezon előtti akció</span>
+  <span class="season-price">15 000 Ft / klíma</span>
+</div>
 </p>
 
 <p>
