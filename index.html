@@ -21,18 +21,27 @@ body {
   color: #333;
 }
 header {
-  min-height: 60vh;
+  min-height: 60vh; /* mobilon nem túl magas */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background:
     linear-gradient(
       to bottom,
-      rgba(0,0,0,0.35) 0%,
-      rgba(0,0,0,0.45) 60%,
-      rgba(0,0,0,0.65) 100%
+      rgba(0, 0, 0, 0.15) 0%,
+      rgba(6, 58, 77, 0.65) 70%,
+      rgba(6, 58, 77, 0.85) 100%
     ),
-    url hero-klima.jpg center / cover no-repeat;
+    url("https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   color: white;
   text-align: center;
-  padding: 80px 20px 60px 20px;
+  padding: 80px 20px;
 }
   
 header h1 {
