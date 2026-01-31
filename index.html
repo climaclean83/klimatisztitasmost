@@ -291,6 +291,21 @@ Info és időpont kérés: e-mailen és telefonon.
 <a href="mailto:info@klimatisztitasmost.hu" class="email-box">
   info@klimatisztitasmost.hu
 </a>
+<h3>Időpontfoglalás</h3>
+
+<form class="booking-form"
+      action="https://formsubmit.co/info@klimatisztitasmost.hu"
+      method="POST">
+
+  <input type="hidden" name="_subject" value="Új időpontkérés – klimatisztitasmost.hu">
+  <input type="hidden" name="_captcha" value="false">
+
+  <input type="text" name="name" placeholder="Név" required>
+  <input type="tel" name="phone" placeholder="Telefonszám" required>
+  <textarea name="message" placeholder="Mikor lenne megfelelő az időpont?"></textarea>
+
+  <button type="submit" class="btn">Időpontot kérek</button>
+</form>
 </main>
 
 <a class="call-float" href="tel:+36209852797">📞 Hívj most</a>
