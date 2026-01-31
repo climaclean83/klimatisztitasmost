@@ -11,17 +11,22 @@
 body {
   margin: 0;
   font-family: 'Inter', Arial, sans-serif;
-  background: linear-gradient(180deg, #eef7ff, #ffffff);
+  background: #f4f8fb;
   color: #333;
 }
 
 header {
-  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-    url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=80')
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(rgba(6, 58, 77, 0.75), rgba(6, 58, 77, 0.75)),
+    url('https://images.unsplash.com/photo-1600566753086-00f18fb6bbae?auto=format&fit=crop&w=1600&q=80')
     center/cover no-repeat;
   color: white;
   text-align: center;
-  padding: 140px 20px 100px 20px;
+  padding: 40px 20px;
 }
 
 header h1 {
@@ -39,7 +44,7 @@ header p {
 }
 
 nav {
-  background: white;
+  background: #063a4d;
   text-align: center;
   padding: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -51,7 +56,7 @@ nav {
 nav a {
   margin: 0 12px;
   text-decoration: none;
-  color: #007bff;
+  color: #e6f6fb;
   font-weight: bold;
 }
 
@@ -66,14 +71,14 @@ main {
 
 .btn {
   display: inline-block;
-  padding: 14px 22px;
-  background: linear-gradient(135deg, #ff7a18, #ffb347);
+  padding: 16px 26px;
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
   color: white;
   border-radius: 999px;
   text-decoration: none;
   font-weight: bold;
-  margin-top: 12px;
-  transition: 0.15s ease;
+  margin-top: 20px;
+  transition: 0.2s ease;
 }
 
 .btn:hover {
