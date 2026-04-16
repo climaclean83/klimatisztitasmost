@@ -185,6 +185,17 @@ footer {
   font-weight: 800;
   margin-top: 6px;
 }
+ .home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+}         
   </style>
 </head>
 
@@ -208,16 +219,30 @@ Klímatisztítás, klímatelepítés és karbantartás Budapest területén. Gyo
 </nav>
 
 <main id="home">
-  <h2>Professzionális klímatisztítás gyors kiszállással</h2>
-<p>
-Tiszta, friss levegő otthonában vagy bármilyen más klimatizált helyiségben.
-Budapest és környékén gyors és szakszerű klímatisztítást, fertőtlenítést és karbantartást
-biztosítunk, a higiénia és a hatékony működés érdekében.
-</p>
+<div class="home-grid">
 
+  <div>
+    <h2>Professzionális klímatisztítás gyors kiszállással</h2>
+    <p>
+    Tiszta, friss levegő otthonában vagy bármilyen más klimatizált helyiségben.
+    Budapest és környékén gyors és szakszerű klímatisztítást, fertőtlenítést és karbantartást biztosítunk.
+    </p>
+    <a class="btn" href="#contact">Időpont foglalás</a>
+  </div>
 
+  <div>
+    <h2>Klíma telepítés</h2>
+    <p>
+    Új klímák szakszerű beszerelése, beüzemelése, teljes ügyintézéssel.
+    Segítünk a megfelelő készülék kiválasztásában is.
+    </p>
+    <a class="btn" href="#contact">Ajánlatkérés</a>
+  </div>
 
-  <a class="btn" href="#contact">Időpont foglalás</a>
+</div>
+
+</div>
+
 </main>
 
 <main id="services">
