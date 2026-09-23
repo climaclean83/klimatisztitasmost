@@ -34,27 +34,69 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section: egymás melletti blokkokkal a kék háttérben -->
     <section class="relative bg-gradient-to-br from-slate-900 via-sky-900 to-slate-900 text-white py-16 sm:py-24 overflow-hidden">
         <div class="absolute inset-0 opacity-20 bg-cover bg-center" style="background-image: url('file_00000000fd90722f813ecfb4919da668.png');"></div>
-        <div class="relative max-w-4xl mx-auto px-4 text-center">
-            <span class="bg-sky-500/20 border border-sky-400/30 text-sky-300 text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-6 inline-block shadow-sm">
-                ⚡ Gyors kiszállás Budapesten és környékén
-            </span>
-            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-6 leading-tight">
-                Büdös, csöpög vagy hangos a klíma?
-            </h1>
-            <p class="text-base sm:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Professzionális beltéri egység tisztítás, fertőtlenítés és szakszerű új klíma telepítés fix árakon, garanciával.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="tel:+36209852797" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition text-lg flex items-center justify-center space-x-3">
-                    <i class="fa-solid fa-phone-volume"></i>
-                    <span>Hívás most: 06 20 985 2797</span>
-                </a>
-                <a href="#arak" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-8 py-4 rounded-xl transition text-lg flex items-center justify-center">
-                    Megnézem az árakat
-                </a>
+        <div class="relative max-w-5xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="bg-sky-500/20 border border-sky-400/30 text-sky-300 text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4 inline-block shadow-sm">
+                    ⚡ Gyors kiszállás Budapesten és Pest megyében
+                </span>
+                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 leading-tight">
+                    Miben segíthetünk a klímájával kapcsolatban?
+                </h1>
+                <p class="text-base sm:text-lg text-slate-300 max-w-xl mx-auto">
+                    Válassza ki az alábbi két fő szolgáltatásunk egyikét:
+                </p>
+            </div>
+
+            <!-- Egymás melletti kártyák -->
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                <!-- Bal kártya: Klímatisztítás -->
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 flex flex-col justify-between shadow-xl">
+                    <div>
+                        <div class="w-12 h-12 bg-sky-500/20 text-sky-400 rounded-xl flex items-center justify-center text-xl mb-6 border border-sky-400/30">
+                            <i class="fa-solid fa-wind"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-white mb-3">Klímatisztítás & Karbantartás</h2>
+                        <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+                            Büdös, csöpög vagy hangos a klíma? Alapos fertőtlenítés, mosózsákos nagytakarítás a tiszta, egészséges levegőért.
+                        </p>
+                        <ul class="space-y-2.5 text-sm text-slate-200 mb-8">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-sky-400 mr-2"></i> Alap és mosózsákos karbantartás</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-sky-400 mr-2"></i> Gomba- és baktériummentesítés</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-sky-400 mr-2"></i> Fix árak, kedvező feltételek</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#arak" class="block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3.5 px-4 rounded-xl text-center text-sm transition shadow-md">
+                            Árak megtekintése
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Jobb kártya: Klímatelepítés -->
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 flex flex-col justify-between shadow-xl">
+                    <div>
+                        <div class="w-12 h-12 bg-amber-500/20 text-amber-400 rounded-xl flex items-center justify-center text-xl mb-6 border border-amber-400/30">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-white mb-3">Klímatelepítés Szakszerűen</h2>
+                        <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+                            Új klímák szakszerű beszerelése, teljes körű kivitelezéssel és szakmai tanácsadással a kiválasztástól a beüzemelésig.
+                        </p>
+                        <ul class="space-y-2.5 text-sm text-slate-200 mb-8">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-amber-400 mr-2"></i> Garanciális új beszerelés</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-amber-400 mr-2"></i> Budapest és Pest megye</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-amber-400 mr-2"></i> Gyors egyedi árajánlat</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="tel:+36209852797" class="block bg-amber-500 hover:bg-amber-600 text-white font-bold py-3.5 px-4 rounded-xl text-center text-sm transition shadow-md">
+                            Hívás telepítésért: 06 20 985 2797
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -62,70 +104,13 @@
     <!-- Navigation Bar -->
     <nav class="bg-sky-950 text-white shadow-md sticky top-[65px] z-40">
         <div class="max-w-6xl mx-auto px-4 flex justify-center space-x-6 sm:space-x-10 py-3 text-sm font-semibold">
-            <a href="#szolgaltatasok" class="hover:text-sky-400 transition">Szolgáltatások</a>
             <a href="#arak" class="hover:text-sky-400 transition">Árlista</a>
             <a href="#kapcsolat" class="hover:text-sky-400 transition">Kapcsolat</a>
         </div>
     </nav>
 
-    <!-- Services Section: Split into 2 columns (Left: Cleaning, Right: Installation) -->
-    <section id="szolgaltatasok" class="py-16 max-w-5xl mx-auto px-4">
-        <div class="text-center mb-12">
-            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">Szolgáltatások</h2>
-            <p class="text-slate-600 max-w-xl mx-auto">Válassza ki az Önnek megfelelő szolgáltatást, legyen szó tisztításról vagy teljes körű beszerelésről.</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-8 items-stretch">
-            <!-- Bal oldal: Klímatisztítás -->
-            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 flex flex-col justify-between shadow-sm">
-                <div>
-                    <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-xl flex items-center justify-center text-xl mb-6">
-                        <i class="fa-solid fa-wind"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Klímatisztítás & Karbantartás</h3>
-                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">
-                        Alapos tisztítás, fertőtlenítés és szagtalanítás. Rendszeres karbantartással a klíma halkabb, egészségesebb és megbízhatóbb marad.
-                    </p>
-                    <ul class="space-y-2.5 text-sm text-slate-700 mb-6">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Alap karbantartás</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Mosózsákos nagykarbantartás</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Gomba- és baktériummentesítés</li>
-                    </ul>
-                </div>
-                <div>
-                    <a href="#arak" class="block bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold py-3 px-4 rounded-xl text-center text-sm transition">
-                        Árak megtekintése
-                    </a>
-                </div>
-            </div>
-
-            <!-- Jobb oldal: Klímatelepítés -->
-            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 flex flex-col justify-between shadow-sm">
-                <div>
-                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-6">
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Klíma Telepítés Szakszerűen</h3>
-                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">
-                        Új klímák szakszerű beszerelése, garanciával, Budapesten és Pest megyében. Teljes körű ügyintézéssel és szakmai tanácsadással a kiválasztástól a beüzemelésig.
-                    </p>
-                    <ul class="space-y-2.5 text-sm text-slate-700 mb-6">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Szakszerű, garanciális beszerelés</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Budapest és Pest megye területén</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Egyedi árajánlat alapján</li>
-                    </ul>
-                </div>
-                <div>
-                    <a href="tel:+36209852797" class="block bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-4 rounded-xl text-center text-sm transition shadow-sm">
-                        Időpontot / Ajánlatot kérek
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Pricing Section -->
-    <section id="arak" class="py-16 max-w-5xl mx-auto px-4 border-t border-slate-100">
+    <section id="arak" class="py-16 max-w-5xl mx-auto px-4">
         <div class="mb-8">
             <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-6">Árlista</h2>
         </div>
@@ -188,12 +173,6 @@
                 <p>Az árak tartalmazzák: Helyszínre való kiszállást, szükséges vegyszert/tisztítófolyadékot, eszközök és műszerek használatát-karbantartását, a szerelő munkadíját.</p>
                 <p>Az árak nem tartalmazzák: gáztöltést, parkolási költséget.</p>
             </div>
-        </div>
-
-        <!-- Klíma telepítés szekció -->
-        <div class="mb-6">
-            <h3 class="text-xl font-bold text-amber-500 mb-2">Klíma telepítés - beszerelés (Budapest és Pest megye)</h3>
-            <p class="text-slate-700 text-sm">Egyedi árajánlat alapján, teljeskörű ügyintézéssel.</p>
         </div>
     </section>
 
