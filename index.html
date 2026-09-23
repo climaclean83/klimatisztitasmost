@@ -1,359 +1,204 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-<meta charset="UTF-8">
-
-<meta name="description"
-        content="Klímatisztítás Budapest területén gyors kiszállással. Beltéri egység tisztítás, fertőtlenítés, szagtalanítás kedvező áron. Hívjon bizalommal!">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" href="air-conditioner.png">
-<link rel="shortcut icon" type="image/png" href="air-conditioner.png">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-  <style>
-* {
-  box-sizing: border-box;
-}
-html, body {
-  overflow-x: hidden;
-  max-width: 100%;
-}
-body {
-  margin: 0;
-  font-family: 'Inter', Arial, sans-serif;
-  background: #f4f8fb;
-  color: #333;
-}
-header {
-  min-height: 55vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  background-image:
-    linear-gradient(
-      to bottom,
-      rgba(0,0,0,0.35),
-      rgba(0,0,0,0.55)
-    ),
-    url('file_00000000fd90722f813ecfb4919da668.png');
-
-  background-size: cover;
-  background-position: center 10%;
-  background-repeat: no-repeat;
-
-  color: white;
-  text-align: center;
-  padding: 24px 16px;
-}
-  
-header h1 {
-  margin-bottom: 16px;
-  font-size: 34px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-header p {
-  font-size: 23px;
-  max-width: 820px;
-  margin: 0 auto;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.35);
-}
-nav {
-  background: #063a4d;
-  text-align: center;
-  padding: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  margin-top: -1px;
-}
-
-nav a {
-  margin: 0 12px;
-  text-decoration: none;
-  color: #e6f6fb;
-  font-weight: bold;
-}
-
-main {
-  max-width: 1000px;
-  margin: 25px auto;
-  background: white;
-  padding: 25px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-
-.btn {
-  display: inline-block;
-  padding: 16px 26px;
-  background: linear-gradient(135deg, #2ecc71, #27ae60);
-  color: white;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 20px;
-  transition: 0.2s ease;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-}
-
-.badge {
-  display: inline-block;
-  background: #28a745;
-  color: white;
-  padding: 6px 14px;
-  border-radius: 999px;
-  font-size: 14px;
-  margin-top: 10px;
-}
-
-.call-float {
-  position: fixed;
-  bottom: 18px;
-  right: 18px;
-  background: #28a745;
-  color: white;
-  padding: 14px 20px;
-  border-radius: 999px;
-  font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
-  z-index: 50;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #777;
-  margin-top: 40px;
-}
-.phone-box {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 14px 22px;
-  font-size: 22px;
-  font-weight: 700;
-  color: #fff;
-  background: linear-gradient(135deg, #2ecc71, #27ae60);
-  border-radius: 999px;
-  text-decoration: none;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
-}
-.email-box {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 12px 22px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #0063a4;
-  background: #eaf4fb;
-  border-radius: 999px;
-  text-decoration: none;
-}
-
-.email-box:hover {
-  background: #d7ecfa;
-}
-  .season-deal {
-  background: linear-gradient(135deg, #00bcd4, #00838f);
-  color: white;
-  padding: 16px 20px;
-  border-radius: 16px;
-  text-align: center;
-  margin: 20px 0;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-.season-label {
-  display: block;
-  font-size: 18px;
-  font-weight: 600;
-  opacity: 0.95;
-}
-
-.season-price {
-  display: block;
-  font-size: 26px;
-  font-weight: 800;
-  margin-top: 6px;
-}
- .home-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-@media (max-width: 768px) {
-  .home-grid {
-    grid-template-columns: 1fr;
-  }
-}       
-.home-grid > div {
-  background: #f4f8fb;
-  padding: 20px;
-  border-radius: 12px;
-}
-
-.home-grid {
-  align-items: stretch;
-}  
-.home-grid > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.home-grid .btn {
-  display: inline-block;
-  width: auto;
-  padding: 12px 24px;
-}
-.home-grid > div {
-  align-items: center;
-}
-.btn-secondary {
-  background: linear-gradient(135deg, #ff7a00, #ff3d00);
-}
-.home-grid > div:last-child {
-  border: 2px solid #ff7a00;
-  transform: scale(1.02);
-}
-.badge {
-  display: inline-block;
-  background: #ff3d00;
-  color: white;
-  font-size: 12px;
-  font-weight: 700;
-  padding: 4px 10px;
-  border-radius: 20px;
-  margin-bottom: 10px;
-}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klímatisztítás és Klímatelepítés Budapest | KlimatisztitasMost</title>
+    <meta name="description" content="Professzionális klímatisztítás, fertőtlenítés és klímatelepítés Budapesten és környékén. Gyors kiszállás, garancia, fix árak. Hívjon bizalommal!">
+    <link rel="icon" type="image/png" href="air-conditioner.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Inter', sans-serif; }</style>
 </head>
+<body class="bg-slate-50 text-slate-800 antialiased">
 
-<body>
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-sky-500 rounded-xl flex items-center justify-center text-white shadow-md">
+                    <i class="fa-solid fa-snowflake text-xl"></i>
+                </div>
+                <div>
+                    <span class="font-extrabold text-lg tracking-tight text-slate-900 block leading-none">Klímatisztítás</span>
+                    <span class="text-xs font-semibold text-sky-600 tracking-wider uppercase">Budapest & Környéke</span>
+                </div>
+            </div>
+            <div>
+                <a href="tel:+36209852797" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl font-bold transition shadow-md flex items-center space-x-2 text-sm sm:text-base">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>06 20 985 2797</span>
+                </a>
+            </div>
+        </div>
+    </header>
 
-<header>
-  <h1>Klímatisztítás és klímatelepítés Budapest</h1>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-slate-900 via-sky-900 to-slate-900 text-white py-16 sm:py-24 overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-cover bg-center" style="background-image: url('file_00000000fd90722f813ecfb4919da668.png');"></div>
+        <div class="relative max-w-4xl mx-auto px-4 text-center">
+            <span class="bg-sky-500/20 border border-sky-400/30 text-sky-300 text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-6 inline-block shadow-sm">
+                ⚡ Gyors kiszállás Budapesten és környékén
+            </span>
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-6 leading-tight">
+                Büdös, csöpög vagy hangos a klíma?
+            </h1>
+            <p class="text-base sm:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Professzionális beltéri egység tisztítás, fertőtlenítés és szakszerű új klíma telepítés fix árakon, garanciával.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tel:+36209852797" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition text-lg flex items-center justify-center space-x-3">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>Hívás most: 06 20 985 2797</span>
+                </a>
+                <a href="#arak" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-8 py-4 rounded-xl transition text-lg flex items-center justify-center">
+                    Megnézem az árakat
+                </a>
+            </div>
+        </div>
+    </section>
 
-<p>
-Üdvözöllek a klímatisztítás világában! 😄<br><br>
+    <!-- Navigation Bar -->
+    <nav class="bg-sky-950 text-white shadow-md sticky top-[65px] z-40">
+        <div class="max-w-6xl mx-auto px-4 flex justify-center space-x-6 sm:space-x-10 py-3 text-sm font-semibold">
+            <a href="#szolgaltatasok" class="hover:text-sky-400 transition">Szolgáltatások</a>
+            <a href="#arak" class="hover:text-sky-400 transition">Árlista</a>
+            <a href="#kapcsolat" class="hover:text-sky-400 transition">Kapcsolat</a>
+        </div>
+    </nav>
 
-Ha a klímád büdös, csöpög, hangos vagy csak ráférne egy tisztítás,
-jó helyen jársz.<br><br>
+    <!-- Services Section -->
+    <section id="szolgaltatasok" class="py-16 max-w-6xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">Miben tudok segíteni?</h2>
+            <p class="text-slate-600 max-w-xl mx-auto">Megbízható, precíz munkavégzés tisztességes árakon, legyen szó karbantartásról vagy új gép beszereléséről.</p>
+        </div>
 
-Mostantól pedig klíma telepítéssel is foglalkozom. 😊<br>
-Ha új készüléket szeretnél, a kiválasztástól a beszerelésig segítek mindenben.
-</p>
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-xl flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-wind"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Klímatisztítás & Karbantartás</h3>
+                    <p class="text-slate-600 mb-6 text-sm leading-relaxed">
+                        A rendszeres tisztítás eltávolítja a baktériumokat, gombákat és a kellemetlen szagokat. Biztosítja a klíma hatékony működését és megvédi az egészségedet.
+                    </p>
+                    <ul class="space-y-2.5 text-sm text-slate-700 mb-8">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Teljes beltéri egység tisztítása</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Baktérium- és gombamentesítés</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Szageltávolítás és szűrőtisztítás</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Külső burkolat fertőtlenítése</li>
+                    </ul>
+                </div>
+                <a href="tel:+36209852797" class="bg-sky-50 hover:bg-sky-100 text-sky-700 font-bold py-3 px-6 rounded-xl text-center transition block">
+                    Időpontot kérek tisztításra
+                </a>
+            </div>
 
-  <a class="btn" href="tel:+36209852797">📞 Hívj nyugodtan 😊</a>
-</header>
+            <!-- Service 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-sky-200 hover:shadow-md transition relative flex flex-col justify-between">
+                <div class="absolute top-6 right-6 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">AJÁNLOTT</div>
+                <div>
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Klíma Telepítés & Beszerelés</h3>
+                    <p class="text-slate-600 mb-6 text-sm leading-relaxed">
+                        Új készülék vásárlását tervezed? Segítek a megfelelő klíma kiválasztásában, a beszerzéstől a szakszerű beüzemelésig és teljes körű ügyintézésig.
+                    </p>
+                    <ul class="space-y-2.5 text-sm text-slate-700 mb-8">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Tanácsadás a megfelelő típus kiválasztásában</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Szakszerű, garanciális beszerelés</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Lakossági és irodai kivitelezés</li>
+                    </ul>
+                </div>
+                <a href="tel:+36209852797" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-xl text-center transition block shadow-sm">
+                    Ajánlatkérés telepítésre
+                </a>
+            </div>
+        </div>
+    </section>
 
-<nav>
-  <a href="#home">Főoldal</a>
-  <a href="#services">Szolgáltatások</a>
-  <a href="#pricing">Árlista</a>
-  <a href="#contact">Kapcsolat</a>
-</nav>
+    <!-- Pricing Section -->
+    <section id="arak" class="bg-slate-100 py-16 border-y border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">Átlátható árak, rejtett költségek nélkül</h2>
+            <p class="text-slate-600 mb-10">Korrekt díjak Budapest területén belül.</p>
 
-<main id="home">
-<div class="home-grid">
+            <div class="grid sm:grid-cols-2 gap-6 text-left">
+                <!-- Price Box 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-emerald-500 ring-2 ring-emerald-500/20 relative flex flex-col justify-between">
+                    <div>
+                        <div class="absolute top-0 right-0 bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">FIX ÁR</div>
+                        <h3 class="text-lg font-bold text-slate-800 mb-1">Klímatisztítás</h3>
+                        <p class="text-xs text-slate-500 mb-4">Budapest területén érvényes</p>
+                        <div class="text-3xl sm:text-4xl font-extrabold text-emerald-600 mb-6">15 000 Ft <span class="text-sm font-normal text-slate-500">/ klíma</span></div>
+                        <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                            <li>✔ Teljes beltéri egység tisztítása</li>
+                            <li>✔ Baktérium- és gombamentesítés</li>
+                            <li>✔ Szageltávolítás és szűrőtisztítás</li>
+                            <li>✔ Külső burkolat fertőtlenítése</li>
+                        </ul>
+                    </div>
+                    <a href="tel:+36209852797" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl text-center transition block">
+                        Hívás időpontért
+                    </a>
+                </div>
 
-  <div>
-    <h2>Professzionális klímatisztítás gyors kiszállással</h2>
-    <p>
-    Tiszta, friss levegő otthonában vagy bármilyen más klimatizált helyiségben.
-    Budapest és környékén gyors és szakszerű klímatisztítást, fertőtlenítést és karbantartást biztosítunk.
-    </p>
-    <a class="btn" href="#contact">Időpont foglalás</a>
-  </div>
+                <!-- Price Box 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-800 mb-1">Klíma Telepítés</h3>
+                        <p class="text-xs text-slate-500 mb-4">Egyedi felmérés alapján</p>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-6">Egyedi árajánlat</div>
+                        <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                            <li>✔ Helyszíni felmérés / egyeztetés</li>
+                            <li>✔ Teljes körű anyagbeszerzés</li>
+                            <li>✔ Szakszerű beüzemelés</li>
+                            <li>✔ Több klíma / irodák esetén kedvezmény</li>
+                        </ul>
+                    </div>
+                    <a href="tel:+36209852797" class="bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 px-4 rounded-xl text-center transition block">
+                        Érdeklődés telefonon
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div>
-    <div class="badge">AJÁNLOTT</div>
-    <h2>Klíma telepítés</h2>
-    <p>
-    Új klímák szakszerű beszerelése, beüzemelése, teljes ügyintézéssel.
-    Segítünk a megfelelő készülék kiválasztásában is.
-    </p>
-    <a class="btn btn-secondary" href="#contact">Ajánlatkérés</a>
-  </div>
+    <!-- Contact Footer -->
+    <footer id="kapcsolat" class="bg-slate-900 text-white py-14">
+        <div class="max-w-6xl mx-auto px-4 grid sm:grid-cols-2 gap-8 items-center">
+            <div>
+                <h3 class="text-xl font-bold mb-2">KlímatisztításMost</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Gyors kiszállás, szakszerű tisztítás és telepítés Budapesten és környékén. Hívjon bizalommal!</p>
+            </div>
+            <div class="sm:text-right space-y-3">
+                <p>
+                    <a href="tel:+36209852797" class="inline-flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-5 py-3 rounded-xl transition text-lg shadow-md">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>06 20 985 2797</span>
+                    </a>
+                </p>
+                <p>
+                    <a href="mailto:info@klimatisztitasmost.hu" class="text-sky-400 hover:underline text-sm font-medium">
+                        <i class="fa-solid fa-envelope mr-1"></i> info@klimatisztitasmost.hu
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 mt-10 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+            © 2026 klimatisztitasmost.hu – Minden jog fenntartva.
+        </div>
+    </footer>
 
-</div>
-
-</div>
-
-</main>
-
-<main id="services">
-  <h2>Szolgáltatások</h2>
-        <p>
-Legyen szó tisztításról, karbantartásról vagy új klíma telepítésről, igyekszem gyorsan és korrektül segíteni. 😊
-</p>
- <ul>
-  <li><strong>Klímatisztítás</strong><br>
- Alapos tisztítás, fertőtlenítés és szagtalanítás, hogy újra friss levegő legyen otthon.</li>
-
-  <li><strong>Karbantartás</strong><br>
- Rendszeres karbantartással a klíma halkabb, tisztább és megbízhatóbb marad. </li>
-</ul>
-
-</main>
-
-<main id="pricing">
-  <h2>Árlista</h2>
-  <p>
-<div class="season-deal">
-  <span class="season-price">15 000 Ft / klíma</span>
-</div>
-</p>
-
-<p>
-Az ár tartalmazza:
-</p>
-
-<ul>
-  <li>✔ Teljes beltéri egység tisztítása</li>
-  <li>✔ Baktérium- és gombamentesítés</li>
-  <li>✔ Szageltávolítás</li>
-  <li>✔ Szűrők tisztítása</li>
-  <li>✔ Külső burkolat fertőtlenítése</li>
-</ul>
-<p><strong>Klíma telepítés:</strong> egyedi árajánlat alapján</p>
-<p>
-<strong>Nagyobb volumenű munkák esetén pl. több klíma, irodák, közületek stb. egyedi ár!</strong><br>
-</p>
-
-<p>
-Az ár Budapesten belül érvényes!<br>
-Info és időpont kérés: e-mailen és telefonon.
-</p>
-
-</main>
-
-<main id="contact">
-  <h2>Kapcsolat</h2>
-  <p><strong>Telefonszám:
-<a href="tel:06209852797" class="phone-box">
-  📞 06 20 985 2797
-</a>
-<p><strong>E-mail:</strong></p>
-<a href="mailto:info@klimatisztitasmost.hu" class="email-box">
-  info@klimatisztitasmost.hu
-</a>
-</main>
-
-<a class="call-float" href="tel:+36209852797">📞 Hívj most</a>
-
-<footer>
-© 2026 klimatisztitasmost.hu – Minden jog fenntartva
-</footer>
+    <!-- Floating Mobile Call Button -->
+    <a href="tel:+36209852797" class="sm:hidden fixed bottom-5 right-5 bg-emerald-600 text-white p-4 rounded-full shadow-2xl flex items-center justify-center text-xl z-50 animate-bounce">
+        <i class="fa-solid fa-phone"></i>
+    </a>
 
 </body>
 </html>
