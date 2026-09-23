@@ -35,26 +35,20 @@
                 </div>
             </div>
 
-            <!-- Jobb oldal: Forgalmazott márkák "képszerű" blokkjai + Hívás gomb -->
+            <!-- Jobb oldal: Valódi képként betöltött márkák + Hívás gomb -->
             <div class="flex flex-wrap items-center justify-center gap-3">
                 <span class="text-xs font-bold text-slate-400 uppercase tracking-wider hidden lg:inline-block mr-1">Forgalmazott márkáink:</span>
                 
-                <!-- GREE márkakártya -->
-                <div class="bg-slate-900 text-white px-3 py-1.5 rounded-lg flex items-center space-x-1.5 shadow-sm border border-slate-800">
-                    <div class="w-4 h-4 rounded-full bg-amber-400 flex items-center justify-center text-[9px] font-black text-slate-900">G</div>
-                    <span class="font-extrabold tracking-wider text-sm italic">GREE</span>
-                </div>
-
-                <!-- POLAR márkakártya -->
-                <div class="bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-lg flex items-center space-x-1.5 shadow-sm border border-emerald-200">
-                    <i class="fa-solid fa-snowflake text-xs text-emerald-500"></i>
-                    <span class="font-bold tracking-tight text-sm">Polar</span>
-                </div>
-
-                <!-- SYEN márkakártya -->
-                <div class="bg-rose-50 text-rose-700 px-3 py-1.5 rounded-lg flex items-center space-x-1.5 shadow-sm border border-rose-200">
-                    <div class="w-4 h-4 rounded-full bg-rose-600 flex items-center justify-center text-[10px] text-white font-bold"><i class="fa-solid fa-bolt text-[9px]"></i></div>
-                    <span class="font-black tracking-wider text-sm uppercase">Syen</span>
+                <!-- Kép alapú márkák konténere -->
+                <div class="flex items-center space-x-3 bg-slate-50 px-3 py-1.5 rounded-xl border border-slate-200 shadow-sm">
+                    <!-- Gree kép -->
+                    <img src="gree.png" alt="Gree klíma" class="h-6 object-contain">
+                    <span class="text-slate-300">|</span>
+                    <!-- Polar kép -->
+                    <img src="polar.png" alt="Polar klíma" class="h-6 object-contain">
+                    <span class="text-slate-300">|</span>
+                    <!-- Syen kép -->
+                    <img src="syen.png" alt="Syen klíma" class="h-6 object-contain">
                 </div>
 
                 <!-- Telefon gomb -->
@@ -66,7 +60,7 @@
         </div>
     </header>
 
-    <!-- Hero Section: egymás melletti blokkokkal a kék háttérben -->
+    <!-- Hero Section -->
     <section class="relative bg-gradient-to-br from-slate-900 via-sky-900 to-slate-900 text-white py-16 sm:py-24 overflow-hidden">
         <div class="absolute inset-0 opacity-20 bg-cover bg-center" style="background-image: url('file_00000000fd90722f813ecfb4919da668.png');"></div>
         <div class="relative max-w-5xl mx-auto px-4">
