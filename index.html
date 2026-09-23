@@ -42,26 +42,9 @@
     <!-- Hero Section -->
     <section class="relative bg-gradient-to-br from-slate-900 via-sky-900 to-slate-900 text-white py-16 sm:py-24 overflow-hidden">
         <div class="absolute inset-0 opacity-20 bg-cover bg-center" style="background-image: url('file_00000000fd90722f813ecfb4919da668.png');"></div>
-        
-        <!-- ITT VANAK A MÁRKÁK HÁTTÉRBEN SZÉTSZÓRVA (Nincs doboz, önmagukban nagyok, random pozíciókban) -->
-        <!-- 1. Gree kép - Bal fent / középtáj -->
-        <div class="absolute top-6 left-4 sm:left-12 opacity-30 sm:opacity-40 pointer-events-none transform -rotate-12 z-0">
-            <img src="gree.png" alt="Gree klíma" class="h-24 sm:h-36 object-contain filter drop-shadow-lg">
-        </div>
-
-        <!-- 2. Polar kép - Jobb fent -->
-        <div class="absolute top-10 right-4 sm:right-16 opacity-30 sm:opacity-40 pointer-events-none transform rotate-12 z-0">
-            <img src="polar.png" alt="Polar klíma" class="h-24 sm:h-36 object-contain filter drop-shadow-lg">
-        </div>
-
-        <!-- 3. Syen kép - Középtáj, kicsit lejebb balra -->
-        <div class="absolute top-1/2 left-2 sm:left-24 opacity-25 sm:opacity-35 pointer-events-none transform rotate-6 z-0 hidden sm:block">
-            <img src="syen.png" alt="Syen klíma" class="h-28 sm:h-40 object-contain filter drop-shadow-lg">
-        </div>
-
         <div class="relative max-w-5xl mx-auto px-4 z-10">
             
-            <div class="text-center mb-12">
+            <div class="text-center mb-10">
                 <span class="bg-sky-500/20 border border-sky-400/30 text-sky-300 text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4 inline-block shadow-sm">
                     ⚡ Gyors kiszállás Budapesten és Pest megyében
                 </span>
@@ -70,9 +53,33 @@
                     Miben segíthetünk a klímájával kapcsolatban?
                 </h1>
                 
-                <p class="text-base sm:text-lg text-slate-300 max-w-xl mx-auto">
+                <p class="text-base sm:text-lg text-slate-300 max-w-xl mx-auto mb-8">
                     Válassza ki az alábbi két fő szolgáltatásunk egyikét:
                 </p>
+
+                <!-- ITT VANAK A MÁRKÁK HÁROMSZÖG ALAKBAN ELHELYEZVE (Elöl, teljes pompájukban, üres részen) -->
+                <div class="my-10 max-w-lg mx-auto">
+                    <p class="text-xs font-bold text-sky-300 uppercase tracking-widest mb-6">Hivatalos forgalmazott márkáink</p>
+                    
+                    <!-- Háromszög elrendezés flex/grid segítségével -->
+                    <div class="flex flex-col items-center gap-6">
+                        <!-- Felső csúcs (Gree) -->
+                        <div class="bg-white/95 backdrop-blur-md px-8 py-4 rounded-2xl shadow-2xl border border-white/40 transform hover:scale-105 transition duration-300">
+                            <img src="gree.png" alt="Gree klíma" class="h-12 sm:h-14 object-contain">
+                        </div>
+
+                        <!-- Alsó sor (Polar és Syen egymás mellett, szélesebben) -->
+                        <div class="flex justify-center gap-6 w-full">
+                            <div class="bg-white/95 backdrop-blur-md px-8 py-4 rounded-2xl shadow-2xl border border-white/40 transform hover:scale-105 transition duration-300">
+                                <img src="polar.png" alt="Polar klíma" class="h-12 sm:h-14 object-contain">
+                            </div>
+                            <div class="bg-white/95 backdrop-blur-md px-8 py-4 rounded-2xl shadow-2xl border border-white/40 transform hover:scale-105 transition duration-300">
+                                <img src="syen.png" alt="Syen klíma" class="h-12 sm:h-14 object-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Egymás melletti szolgáltatás kártyák -->
