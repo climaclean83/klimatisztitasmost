@@ -15,47 +15,22 @@
 
     <!-- Header -->
     <header class="bg-white shadow-sm sticky top-0 z-50 border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
             
             <!-- Bal oldal: Márkanév -->
-            <div class="flex items-center space-x-2 w-full md:w-auto justify-between md:justify-start">
-                <div class="flex items-center space-x-2">
-                    <div class="w-10 h-10 bg-sky-500 rounded-xl flex items-center justify-center text-white shadow-md">
-                        <i class="fa-solid fa-snowflake text-xl"></i>
-                    </div>
-                    <div>
-                        <span class="font-extrabold text-lg tracking-tight text-slate-900 block leading-none">Klímatisztítás</span>
-                        <span class="text-xs font-semibold text-sky-600 tracking-wider uppercase">Budapest & Környéke</span>
-                    </div>
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-sky-500 rounded-xl flex items-center justify-center text-white shadow-md">
+                    <i class="fa-solid fa-snowflake text-xl"></i>
                 </div>
-                <div class="md:hidden">
-                    <a href="tel:+36209852797" class="bg-emerald-600 text-white px-3 py-2 rounded-xl font-bold text-sm shadow-sm flex items-center space-x-1.5">
-                        <i class="fa-solid fa-phone"></i>
-                        <span>Hívás</span>
-                    </a>
+                <div>
+                    <span class="font-extrabold text-lg tracking-tight text-slate-900 block leading-none">Klímatisztítás</span>
+                    <span class="text-xs font-semibold text-sky-600 tracking-wider uppercase">Budapest & Környéke</span>
                 </div>
             </div>
 
-            <!-- Jobb oldal: Itt van a kurzor által jelzett terület (Forgalmazott márkák + Nagyobb képek + Telefon gomb) -->
-            <div class="flex flex-wrap items-center justify-center md:justify-end gap-4 w-full md:w-auto">
-                
-                <!-- Márkák konténer (ahova a kurzor mutatott) -->
-                <div class="flex flex-col sm:flex-row items-center gap-2">
-                    <span class="text-[11px] font-extrabold text-slate-400 uppercase tracking-widest">Forgalmazott márkáink:</span>
-                    <div class="flex items-center space-x-3 bg-slate-50 px-4 py-2 rounded-xl border border-slate-200 shadow-sm">
-                        <!-- Gree kép (nagyobb méret: h-8 / 32px magas) -->
-                        <img src="gree.png" alt="Gree klíma" class="h-8 object-contain">
-                        <span class="text-slate-300 font-light">|</span>
-                        <!-- Polar kép (nagyobb méret) -->
-                        <img src="polar.png" alt="Polar klíma" class="h-8 object-contain">
-                        <span class="text-slate-300 font-light">|</span>
-                        <!-- Syen kép (nagyobb méret) -->
-                        <img src="syen.png" alt="Syen klíma" class="h-8 object-contain">
-                    </div>
-                </div>
-
-                <!-- Telefon gomb -->
-                <a href="tel:+36209852797" class="hidden md:flex bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl font-bold transition shadow-md items-center space-x-2 text-sm">
+            <!-- Jobb oldal: Csak a telefon gomb maradt a fejlécben, letisztultan -->
+            <div>
+                <a href="tel:+36209852797" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl font-bold transition shadow-md flex items-center space-x-2 text-sm">
                     <i class="fa-solid fa-phone"></i>
                     <span>06 20 985 2797</span>
                 </a>
@@ -64,18 +39,36 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (Itt kaptak helyet a képek a cím mellett/alatt) -->
     <section class="relative bg-gradient-to-br from-slate-900 via-sky-900 to-slate-900 text-white py-16 sm:py-24 overflow-hidden">
         <div class="absolute inset-0 opacity-20 bg-cover bg-center" style="background-image: url('file_00000000fd90722f813ecfb4919da668.png');"></div>
         <div class="relative max-w-5xl mx-auto px-4">
+            
             <div class="text-center mb-12">
                 <span class="bg-sky-500/20 border border-sky-400/30 text-sky-300 text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4 inline-block shadow-sm">
                     ⚡ Gyors kiszállás Budapesten és Pest megyében
                 </span>
+                
                 <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 leading-tight">
                     Miben segíthetünk a klímájával kapcsolatban?
                 </h1>
-                <p class="text-base sm:text-lg text-slate-300 max-w-xl mx-auto">
+
+                <!-- IDE KERÜLTEK A KÉPEK: Forgalmazott márkáink nagy méretben a főcím alá -->
+                <div class="my-6 inline-flex flex-col sm:flex-row items-center bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl border border-white/25 shadow-xl gap-4">
+                    <span class="text-xs font-extrabold text-sky-200 uppercase tracking-widest">Forgalmazott márkáink:</span>
+                    <div class="flex items-center space-x-4 bg-white/90 px-4 py-2 rounded-xl shadow-inner">
+                        <!-- Gree kép (nagy méret: h-9 / 36px magas) -->
+                        <img src="gree.png" alt="Gree klíma" class="h-9 object-contain">
+                        <span class="text-slate-300 font-light">|</span>
+                        <!-- Polar kép -->
+                        <img src="polar.png" alt="Polar klíma" class="h-9 object-contain">
+                        <span class="text-slate-300 font-light">|</span>
+                        <!-- Syen kép -->
+                        <img src="syen.png" alt="Syen klíma" class="h-9 object-contain">
+                    </div>
+                </div>
+
+                <p class="text-base sm:text-lg text-slate-300 max-w-xl mx-auto mt-4">
                     Válassza ki az alábbi két fő szolgáltatásunk egyikét:
                 </p>
             </div>
@@ -132,7 +125,7 @@
     </section>
 
     <!-- Navigation Bar -->
-    <nav class="bg-sky-950 text-white shadow-md sticky top-[73px] z-40">
+    <nav class="bg-sky-950 text-white shadow-md sticky top-[65px] z-40">
         <div class="max-w-6xl mx-auto px-4 flex justify-center space-x-6 sm:space-x-10 py-3 text-sm font-semibold">
             <a href="#arak" class="hover:text-sky-400 transition">Árlista</a>
             <a href="#kapcsolat" class="hover:text-sky-400 transition">Kapcsolat</a>
